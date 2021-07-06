@@ -27,7 +27,7 @@ const paperclips = {
     name: 'Paper clips',
     image: 'paperclips.jpg',
     description: 'A wondrous thing to get you out of a tight spot',
-    price: 8.50,
+    price: 8.99,
 };
 
 const binderclips = {
