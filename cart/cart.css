@@ -1,0 +1,12 @@
+table {
+    border-collapse: collapse;
+    border: 3px solid red;
+}
+thead {
+    background-color: lightgray;
+    font-weight: 700;
+}
+table th, table td {
+    padding: 10px;
+    text-align: right;
+}

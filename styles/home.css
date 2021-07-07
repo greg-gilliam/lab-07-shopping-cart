@@ -21,3 +21,12 @@
 #supplies li img {
     width: 100%;
 }
+a {
+    color: green;
+    text-decoration: none;
+    font-size: 2rem;
+}
+a:hover{
+    color: blue;
+    font-weight: bold;
+}
