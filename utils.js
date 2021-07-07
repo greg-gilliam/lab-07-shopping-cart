@@ -33,7 +33,7 @@ export function renderTableRow(suppliesItem, cartItem){
     return tr;
 }
 
-export function getTotal(supplies, cart){
+export function calcItemTotal(supplies, cart){
     let orderTotal = 0;
     for (let item of cart){
         const supplies = findById(supplies, item.id);

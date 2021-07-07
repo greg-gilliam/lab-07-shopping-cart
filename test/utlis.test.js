@@ -1,4 +1,4 @@
-import { findById, getTotal, renderTableRow } from '../utils.js';
+import { findById, calcItemTotal, renderTableRow } from '../utils.js';
 import supplies from '../data/supplies.js';
 
 const test = QUnit.test;

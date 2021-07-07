@@ -1,4 +1,4 @@
-import { findById, getTotal, renderTableRow, toUSD } from '../utils.js';
+import { findById, calcItemTotal, renderTableRow, toUSD } from '../utils.js';
 import supplies from '../data/supplies.js';
 import cart from '../data/cart.js';
 
@@ -11,5 +11,5 @@ for (let item of cart) {
 }
 
 const totalDom = document.getElementById('order-total');
-consts total = getTotal(supplies, cart);
+const total = calcItemTotal(supplies, cart);
 totalDom.textContent = toUSD(total);
