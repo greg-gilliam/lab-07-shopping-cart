@@ -6,7 +6,6 @@ const tableBody = document.getElementById('table-body');
 
 for (let item of cart) {
     let supply = findById(supplies, item.id);
-    console.log(supply);
     const tr = renderTableRow(supply, item);
     tableBody.appendChild(tr);
 }

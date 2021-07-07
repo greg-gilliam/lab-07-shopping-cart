@@ -18,7 +18,8 @@ export function renderTableRow(suppliesItem, cartItem){
     tr.appendChild(tdName);
 
     const tdPrice = document.createElement('td');
-    tdPrice.textContent = cartItem.qty;
+    tdPrice.textContent = suppliesItem.price;
+    console.log(tdPrice);
     tr.appendChild(tdPrice);
 
     const tdQty = document.createElement('td');
@@ -26,6 +27,7 @@ export function renderTableRow(suppliesItem, cartItem){
     tr.appendChild(tdQty);
 
     const tdTotal = document.createElement('td');
+    console.log(suppliesItem.price, cartItem);
     const total = suppliesItem.price * cartItem.qty;
     tdTotal.textContent = toUSD(total);
     tr.appendChild(tdTotal);
@@ -36,8 +38,8 @@ export function renderTableRow(suppliesItem, cartItem){
 export function calcItemTotal(supplies, cart){
     let orderTotal = 0;
     for (let item of cart){
-        const supplies = findById(supplies, item.id);
-        orderTotal += supplies.price * item.qty;
+        const supply = findById(supplies, item.id);
+        orderTotal += supply.price * item.qty;
     }
     return orderTotal;
 }
