@@ -1,5 +1,5 @@
 const stapler = {
-    id: '6',
+    id: 6,
     name: 'Red Stapler',
     image: 'red.stapler.jpg',
     description: 'Excuse me, I believe you have my stapler',
@@ -7,7 +7,7 @@ const stapler = {
 };
 
 const steno = {
-    id: '5',
+    id: 5,
     name: 'Steno pad',
     image: 'steno.jpeg',
     description: 'Certainly not more flammable than our competitors paper',
@@ -15,7 +15,7 @@ const steno = {
 };
 
 const postIts = {
-    id: '4',
+    id: 4,
     name: 'Post its',
     image: 'post.its.jpeg',
     description: 'Believe it or not, I invented Post-its',
@@ -23,7 +23,7 @@ const postIts = {
 };
 
 const paperclips = {
-    id: '3',
+    id: 3,
     name: 'Paper clips',
     image: 'paperclips.jpg',
     description: 'A wondrous thing to get you out of a tight spot',
@@ -31,7 +31,7 @@ const paperclips = {
 };
 
 const binderclips = {
-    id: '2',
+    id: 2,
     name: 'Binder clips',
     image: 'binderclips.jpeg',
     description: 'Getting you ready for the business-person luncheon',
@@ -39,12 +39,20 @@ const binderclips = {
 };
 
 const fax = {
-    id: '1',
+    id: 1,
     name: 'Fax machine',
     image: 'fax.jpeg',
     description: 'Why does it say paper jam when there is no paper jam?',
     price: 29.00,
-};
+}; 
 
-export const supplies = [fax, binderclips, paperclips, postIts, steno, stapler];
+export const supplies = [
+    fax, 
+    binderclips, 
+    paperclips, 
+    postIts, 
+    steno, 
+    stapler
+];
+
 
