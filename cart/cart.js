@@ -13,7 +13,7 @@ function renderCart(){
         const tr = renderTableRow(supply, item);
         tableBody.appendChild(tr);
     }
-    if(cart.length === 0){
+    if (cart.length === 0){
         tableBody.innerHTML = '';
     }
     const totalDom = document.getElementById('order-total');

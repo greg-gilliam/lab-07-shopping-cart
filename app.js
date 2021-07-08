@@ -13,7 +13,7 @@ for (let supply of supplies) {
 const addButtons = document.querySelectorAll('.add');
 for (let btn of addButtons) {
     btn.addEventListener('click', (e)=>{
-        console.log("i am clicking buttons", e.target.value);
+        console.log('i am clicking buttons', e.target.value);
         console.log(typeof(e.target.value));
         addItemtoCart(Number(e.target.value));
     });
