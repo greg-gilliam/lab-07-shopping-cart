@@ -9,8 +9,8 @@ function renderCart(){
     const cart = getCart();
     console.log('cart inside renderCart', cart);
     for (let item of cart) {
-        const supplies = findById(supplies, item.id);
-        const tr = renderTableRow(supplies, item);
+        const supply = findById(supplies, item.id);
+        const tr = renderTableRow(supply, item);
         tableBody.appendChild(tr);
     }
     if(cart.length === 0){
