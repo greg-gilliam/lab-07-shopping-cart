@@ -27,3 +27,14 @@ clearButton.addEventListener('click', ()=>{
     clearCart();
     location.reload();
 });
+
+const orderButton = document.getElementById('order');
+const cart = getCart();
+if (cart.length === 0){
+    orderButton.disabled = true;
+} else {
+    orderButton.addEventListener('click', ()=>{
+        console.log('order placed');
+    }
+    );
+}
