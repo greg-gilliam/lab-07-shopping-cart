@@ -12,6 +12,8 @@ export function renderSupplies(supplies){
 
     const button = document.createElement('button');
     button.textContent = 'Add to cart';
+    button.value = supplies.id;
+    button.classList.add('add');
 
     suppliesLI.appendChild(suppliesh3);
     suppliesLI.appendChild(suppliesImg);
