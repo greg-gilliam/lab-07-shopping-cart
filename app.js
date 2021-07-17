@@ -1,4 +1,4 @@
-import { supplies } from '../data/supplies.js';
+import { supplies } from './data/supplies.js';
 import { renderSupplies } from './render-supplies.js';
 console.log(supplies);
 import { addItemtoCart } from './storage-utils.js';
