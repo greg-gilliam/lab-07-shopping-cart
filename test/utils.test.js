@@ -1,5 +1,5 @@
-import { calcOrderTotal, findById, renderTableRow, calcItemTotal } from '../utils.js';
-import supplies from '../data/supplies.js';
+import { findById, renderTableRow, calcOrderTotal } from '../utils.js';
+import { supplies } from '../data/supplies.js';
 
 const test = QUnit.test;
 
@@ -34,10 +34,10 @@ test('renderTableRow returns a <tr> element', expect => {
     expect.equal(html, expected);
 });
 
-test('calcItemTotal should return the total amount in the cart', expect=> {
+test('calcOrderTotal should return the total amount in the cart', expect=> {
     const cart = [
-        { id: 6, qty: 2 },
-        { id: 5, qty: 3 }
+        { id: 6, qty: 1 },
+        { id: 5, qty: 1 }
     ];
     const data = [{
         id: 6, 
@@ -49,6 +49,7 @@ test('calcItemTotal should return the total amount in the cart', expect=> {
     }];
 
     const expected = 18.99;
-    const actual = calcOrderTotal(data, cart);
-    expect.equal(expected, actual);
+    const actualNumber = calcOrderTotal(data, cart);
+    const actual = Number(actualNumber.toFixed(2));
+    expect.deepEqual(actual, expected);
 });
